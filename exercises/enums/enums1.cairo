@@ -6,6 +6,10 @@
 use debug::print;
 use debug::PrintTrait;
 enum Message { // TODO: define a few types of messages as used below
+    Quit: (),
+    Echo: felt252,
+    Move: (usize, usize), //moving in 2d like x,y coordinates
+    ChangeColor: (u8,u8,u8) //color in 3d tuple, like rgb format for example
 }
 
 fn main() {
