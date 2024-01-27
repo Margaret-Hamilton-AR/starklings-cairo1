@@ -8,6 +8,10 @@ use debug::PrintTrait;
 
 #[derive(Drop, Copy)]
 enum Message { // TODO: implement the message variant types based on their usage below
+    Quit: (),
+    Echo: felt252,
+    Move: Point,
+    ChangeColor: (u8, u8, u8)
 }
 
 #[derive(Drop, Copy)]
