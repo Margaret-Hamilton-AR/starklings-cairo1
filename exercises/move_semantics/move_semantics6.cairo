@@ -19,7 +19,7 @@ fn main() {
 }
 
 // Should not take ownership and not modify the variable passed.
-fn get_value(number: Number) -> u32 {
+fn get_value(ref number: *Number) -> u32 {
     number.value
 }
 
